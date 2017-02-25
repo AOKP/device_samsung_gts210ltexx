@@ -13,5 +13,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/bluetooth/bt_vendor.conf:system/etc/bluetooth/bt_vendor.conf
 
+#Overlays	
+DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay	
+
 # call the proprietary setup
 $(call inherit-product-if-exists, vendor/samsung/gts210ltexx/gts210ltexx-vendor.mk)
